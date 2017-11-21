@@ -27,6 +27,15 @@ class GameObject(object):
     def remove_child(self, game_object):
         self.children.remove(game_object)
         game_object.parent = None
+
+    def start(self):
+        for component in self.components:
+            if component.enabled and not component.started:
+                component.start()
+                component.started = True
+
+        for game_object in self.children:
+            game_object.start()
     
     def update(self):
         for component in self.components:
