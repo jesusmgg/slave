@@ -1,6 +1,6 @@
 from engine.engine import *
 
-from scenes import scene_main
+from pong_test.scenes import scene_main
 
 
 GAME_TITLE = "Pong test"

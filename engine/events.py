@@ -60,6 +60,7 @@ class EventManager(Component):
                 elif event.key == pygame.locals.K_DOWN: key = "down"
                 elif event.key == pygame.locals.K_LEFT: key = "left"
                 elif event.key == pygame.locals.K_RIGHT: key = "right"
+                elif event.key == pygame.locals.K_ESCAPE: key = "escape"
                 e.data = (key, modifier)
                 self.events.append(e)
     
@@ -71,4 +72,3 @@ class EventManager(Component):
             if event.type == EventType.key_down:
                 if event.data[0] == key:
                     return True
-            
