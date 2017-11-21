@@ -1,5 +1,5 @@
 # Slave Engine
-Very simple Python game engine with a component system.
+Very simple Python game engine with a component system. Currently the backend is powered by pygame, but it should be easily ported to any library or language if needed.
 
 ## Repository structure
 - *ecs:* component system, pure Python.
